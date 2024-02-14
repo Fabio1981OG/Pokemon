@@ -1,0 +1,21 @@
+.pokemon-details {
+  margin-top: 10px;
+}
+
+.pokemon-details span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pokemon-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pokemon-details button:hover {
+  background-color: #0056b3;
+}

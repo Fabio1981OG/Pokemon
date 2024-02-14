@@ -1,0 +1,30 @@
+<app-procurar-por-palavra (search)="search($event)"></app-procurar-por-palavra>
+
+<ul class="pokemon-list">
+    <li *ngFor="let pokemon of pokemons" class="pokemon-card">
+        
+        <div class="pokemon-circle">
+            <img src="{{pokemon.imgURL}}" alt=" img" class="pokemon-image">
+            
+            <div class="pokemon-details">
+                <span class="pokemon-id">#{{pokemon.id}}</span>
+                <span class="pokemon-name">{{pokemon.name}}</span>
+                <span class="pokemon-types">{{pokemon.types}}</span>
+            </div>
+        
+        </div>
+    
+    </li>
+</ul> 
+
+
+
+
+<ul>
+    <li *ngFor="let pokemon of pokemons"
+        routerLink="/detalhes/{{pokemon.id}}">
+        <img src="{{pokemon.imgURL}}" alt="Logo da Aplicação" style="display: block; margin: 0 auto;"> {{ pokemon.name }} - {{pokemon.types}}
+    </li>
+</ul>
+-->
+

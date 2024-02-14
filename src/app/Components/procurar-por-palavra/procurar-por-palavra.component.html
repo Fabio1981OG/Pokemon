@@ -1,0 +1,9 @@
+<div id="search-component">
+    <label for="search-box">
+
+    </label>
+    <input #searchBox id="search-box"
+      [(ngModel)]="procuraPalavra"
+      (input)="search.emit(procuraPalavra)"
+      placeholder="Search Pokemon"/>
+  </div>
